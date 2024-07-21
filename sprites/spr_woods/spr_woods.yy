@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"tilesets sprites",
+    "path":"folders/Sprites/tilesets sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

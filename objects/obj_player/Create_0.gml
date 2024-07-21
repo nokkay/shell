@@ -6,9 +6,9 @@
 	image_speed = 0
 	xspd = 0
 	yspd = 0
-	walk_spd = 2
-	slide_spd = 3
-	slide_distance = 72
+	walk_spd = 4
+	slide_spd = 6
+	slide_distance = 140 
 
 	
 

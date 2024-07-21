@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Imported Sprites",
-    "path":"folders/Sprites/Imported Sprites.yy",
+    "name":"premade sprites",
+    "path":"folders/Sprites/premade sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

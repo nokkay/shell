@@ -1,4 +1,4 @@
-/// @desc Initialize & Globals
+/// @desc Initialize & Globals, Creates Camera
 
 	randomize()
 

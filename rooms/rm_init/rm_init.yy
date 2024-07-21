@@ -1,5 +1,5 @@
 {
-  "$GMRoom":"v1",
+  "$GMRoom":"",
   "%Name":"rm_init",
   "creationCodeFile":"",
   "inheritCode":false,
@@ -24,10 +24,10 @@
   "resourceType":"GMRoom",
   "resourceVersion":"2.0",
   "roomSettings":{
-    "Height":768,
+    "Height":800,
     "inheritRoomSettings":false,
     "persistent":false,
-    "Width":1366,
+    "Width":1200,
   },
   "sequenceId":null,
   "views":[
