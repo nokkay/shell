@@ -6,10 +6,13 @@
   "name":"obj_house",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Entities",
+    "path":"folders/Objects/Entities.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_p_entity",
+    "path":"objects/obj_p_entity/obj_p_entity.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

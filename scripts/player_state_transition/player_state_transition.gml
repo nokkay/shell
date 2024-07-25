@@ -1,8 +1,10 @@
 
 function player_state_transition()
 {
+	// movement
+	player_collision()
 	
-	scr_player_collision()
-	
+	// update image index
+	player_animate_sprite()
 	
 }

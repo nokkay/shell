@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"scr_screen_shake",
+  "%Name":"screen_shake",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_screen_shake",
+  "name":"screen_shake",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

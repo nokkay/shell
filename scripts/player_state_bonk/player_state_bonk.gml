@@ -5,7 +5,7 @@ function player_state_bonk()
 	yspd = lengthdir_y(bonk_spd, direction-180)
 	
 	move_distance_remaining = max(0, move_distance_remaining - slide_spd)
-	var _collided = scr_player_collision()
+	var _collided = player_collision()
 	
 	// update sprite
 	sprite_index = spr_player_hurt 

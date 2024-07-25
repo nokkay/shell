@@ -10,7 +10,7 @@ function player_state_emote()
 	}
 	
 	// update sprite
-	scr_player_animation()
+	player_animate_sprite()
 	
 	if animation_end 
 	{

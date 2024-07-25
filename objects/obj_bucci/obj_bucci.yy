@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_bucci",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_p_entity","path":"objects/obj_p_entity/obj_p_entity.yy",},"propertyId":{"name":"entity_activate_script","path":"objects/obj_p_entity/obj_p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"scr_new_textbox",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_p_entity","path":"objects/obj_p_entity/obj_p_entity.yy",},"propertyId":{"name":"entity_activate_script","path":"objects/obj_p_entity/obj_p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"new_textbox",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_p_entity","path":"objects/obj_p_entity/obj_p_entity.yy",},"propertyId":{"name":"entity_activate_args","path":"objects/obj_p_entity/obj_p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[\"yaoi :3\", 2, [\"1:men\", \"2:i fucking hate you!!!!!\"]]",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_p_entity","path":"objects/obj_p_entity/obj_p_entity.yy",},"propertyId":{"name":"entity_shadow_scale_x","path":"objects/obj_p_entity/obj_p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.25",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_p_entity","path":"objects/obj_p_entity/obj_p_entity.yy",},"propertyId":{"name":"entity_NPC","path":"objects/obj_p_entity/obj_p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},

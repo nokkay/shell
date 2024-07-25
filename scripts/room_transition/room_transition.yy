@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"scr_player_collision",
+  "%Name":"room_transition",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_player_collision",
+  "name":"room_transition",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

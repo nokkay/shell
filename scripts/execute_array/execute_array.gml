@@ -2,7 +2,7 @@
 ///@args script
 ///@args args
 
-function scr_execute_array()
+function execute_array()
 {
 
 	scr = argument0;

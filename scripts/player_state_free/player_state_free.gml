@@ -9,7 +9,7 @@ function player_state_free()
 	
 
 // collision + move
-	scr_player_collision()
+	player_collision()
 
 
 // update sprite index
@@ -23,7 +23,7 @@ function player_state_free()
 	if (_old_spr != sprite_index) local_frame = 0
 	
 // update image index
-	scr_player_animation();
+	player_animate_sprite();
 
 // attack key logic
 	if key_attack
@@ -62,7 +62,7 @@ function player_state_free()
 		else
 		{
 			// 3.
-			scr_execute_array(activate.entity_activate_script, activate.entity_activate_args)
+			execute_array(activate.entity_activate_script, activate.entity_activate_args)
 			
 			// 4.
 			if (activate.entity_NPC)

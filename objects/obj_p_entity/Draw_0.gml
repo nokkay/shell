@@ -1,5 +1,6 @@
 /// @description 
 
+	// shadow
 	if (entity_shadow) draw_sprite_ext(
 		spr_shadow,
 		image_index,

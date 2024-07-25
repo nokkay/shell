@@ -17,7 +17,7 @@ function attack_slash()
 	calc_attack(spr_player_attack_slash_hb)
 	
 	// update sprite
-	scr_player_animation()
+	player_animate_sprite()
 	
 	if animation_end 
 	{

@@ -1,5 +1,5 @@
 
-function scr_player_animation()
+function player_animate_sprite()
 {
 	
 // update sprite

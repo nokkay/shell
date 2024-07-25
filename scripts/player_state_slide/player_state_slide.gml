@@ -5,7 +5,7 @@ function player_state_slide()
 	yspd = lengthdir_y(slide_spd, direction)
 	
 	move_distance_remaining = max(0, move_distance_remaining - slide_spd)
-	var _collided = scr_player_collision()
+	var _collided = player_collision()
 	
 	// update sprite
 	sprite_index = sprite_slide
@@ -22,6 +22,6 @@ function player_state_slide()
 	{
 		state = player_state_bonk
 		move_distance_remaining = distance_bonk
-		scr_screen_shake()
+		screen_shake()
 	}
 }

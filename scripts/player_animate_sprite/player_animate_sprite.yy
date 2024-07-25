@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"scr_dialogue_responses",
+  "%Name":"player_animate_sprite",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_dialogue_responses",
+  "name":"player_animate_sprite",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

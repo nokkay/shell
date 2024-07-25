@@ -3,7 +3,7 @@
 ///@arg background 
 ///@arg [responses]
 
-function scr_new_textbox()
+function new_textbox()
 {
 	var _obj
 	if (instance_exists(obj_text)) _obj = obj_text_queued; else _obj = obj_text;

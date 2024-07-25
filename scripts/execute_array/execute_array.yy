@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"scr_new_textbox",
+  "%Name":"execute_array",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_new_textbox",
+  "name":"execute_array",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

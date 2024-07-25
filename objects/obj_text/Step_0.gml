@@ -24,7 +24,7 @@
 			if responses[0] != -1
 			{
 				// inputs choice from given responses and returns the npc response to your choice
-				with (origin_instance) scr_dialogue_responses(other.response_scripts[other.response_selected])
+				with (origin_instance) dialogue_responses(other.response_scripts[other.response_selected])
 			}
 			
 			

@@ -9,4 +9,6 @@
 	{
 		x = global.target_x
 		y = global.target_y
+		draw_x = global.target_x
+		draw_y = global.target_y
 	}
