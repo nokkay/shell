@@ -20,6 +20,7 @@
   "height":32,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"2b4ea456-0019-48b0-9794-be1a7a8daa77","blendMode":1,"displayName":"Layer 1","isLocked":false,"name":"2b4ea456-0019-48b0-9794-be1a7a8daa77","opacity":75.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"4e60e2fb-c532-4f11-8fa9-d4067bc34630","blendMode":1,"displayName":"default","isLocked":false,"name":"4e60e2fb-c532-4f11-8fa9-d4067bc34630","opacity":75.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_camera",

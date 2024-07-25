@@ -1,1 +1,1 @@
-global.font_main = fnt_basic
+global.font_main = fnt_text

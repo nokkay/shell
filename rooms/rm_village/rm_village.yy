@@ -162,8 +162,8 @@
   ],
   "name":"rm_village",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Trash",
+    "path":"folders/Trash.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

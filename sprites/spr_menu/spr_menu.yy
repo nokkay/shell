@@ -53,7 +53,7 @@
   "origin":0,
   "parent":{
     "name":"Menu",
-    "path":"folders/Menu.yy",
+    "path":"folders/Trash/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

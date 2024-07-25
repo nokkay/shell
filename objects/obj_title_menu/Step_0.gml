@@ -1,7 +1,7 @@
 // get input
-	up_key = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
-	down_key = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))
-	accept_key = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter)
+	key_up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
+	key_down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))
+	key_accept = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter)
 	
 // store number of options in current menu
 
@@ -9,14 +9,14 @@
 	
 
 // move through the menu
-	pos += down_key - up_key
+	pos += key_down - key_up
 	
 // loop it
 	if pos >= op_length {pos = 0}
 	if pos < 0 {pos = op_length - 1}
 	
 // using the options
-if accept_key
+if key_accept
 {
 	var _sml = menu_level // start menu level
 	

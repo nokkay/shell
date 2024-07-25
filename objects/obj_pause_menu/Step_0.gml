@@ -3,14 +3,14 @@
 
 
 // get input
-	up_key = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
-	down_key = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))
-	accept_key = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter)
-	exit_key = keyboard_check_pressed(vk_escape)
+	key_up = keyboard_check_pressed(vk_up) or keyboard_check_pressed(ord("W"))
+	key_down = keyboard_check_pressed(vk_down) or keyboard_check_pressed(ord("S"))
+	key_accept = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter)
+	key_exit = keyboard_check_pressed(vk_escape)
 	
 	
 // escape to exit with delay 
-	if exit_key && escape_enable
+	if key_exit && escape_enable
 	{
 		instance_destroy(pauser); instance_destroy()	
 	}
@@ -22,7 +22,7 @@
 	
 
 // move through the menu
-	pos += down_key - up_key
+	pos += key_down - key_up
 	
 // loop it
 	if pos >= op_length {pos = 0}
@@ -31,7 +31,7 @@
 
 	
 // using the options
-if accept_key
+if key_accept
 {
 	var _sml = menu_level // start menu level
 	

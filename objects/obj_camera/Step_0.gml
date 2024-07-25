@@ -1,6 +1,5 @@
 /// @description Update Camera
 
-
 // update destination
 	if instance_exists(follow)
 	{
@@ -13,7 +12,7 @@
 	y += (y_to - y) / smoothing
 	
 	
-// keep camera center inside room
+// clamp camera center inside room
 	x = clamp(x, view_width_half, room_width - view_width_half)
 	y = clamp(y, view_height_half, room_height - view_height_half)
 	
@@ -23,3 +22,4 @@
 	
 	shake_remain = max(0, shake_remain - ((1/shake_length) * shake_mag))
 	camera_set_view_pos(cam, x-view_width_half, y-view_height_half)
+	

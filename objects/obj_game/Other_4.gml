@@ -1,3 +1,4 @@
 /// @description Layer Management
 
-	layer_set_visible("collision", false)
+	layer_set_visible("Collision", false)
+	

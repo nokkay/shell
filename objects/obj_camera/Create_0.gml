@@ -7,7 +7,7 @@
 	x_to = xstart
 	y_to = ystart
 	
-	smoothing = 5
+	smoothing = 5 
 	shake_length = 0
 	shake_mag = 0
 	shake_remain = 0
