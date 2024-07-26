@@ -36,9 +36,9 @@ function player_collision()
 		_entity_count--
 	}
 
-	
 	// horizontal move commit
 	x += xspd
+	breakpoint = 10
 	
 	// clear list between axis
 	ds_list_clear(_entity_list)

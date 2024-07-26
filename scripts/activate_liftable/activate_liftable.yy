@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"activate_liftable",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"activate_liftable",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

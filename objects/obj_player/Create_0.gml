@@ -16,6 +16,8 @@
 	distance_bonk_height = 24
 	bonk_spd = 2
 	z = 0
+	
+	animation_end_script = -1
 
 // sprites
 	sprite_slide = spr_player_slide

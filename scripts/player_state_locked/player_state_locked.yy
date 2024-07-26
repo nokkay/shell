@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"player_state_locked",
   "parent":{
-    "name":"PlayerStateMachine",
-    "path":"folders/Scripts/PlayerStateMachine.yy",
+    "name":"PlayerGeneral",
+    "path":"folders/Scripts/PlayerGeneral.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

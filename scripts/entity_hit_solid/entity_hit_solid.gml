@@ -1,5 +1,9 @@
 
 function entity_hit_solid()
 {
-	flash = 0.25
+	// only hit if collision is enabled
+	if (entity_collision)
+	{
+		flash = 0.25
+	}
 }

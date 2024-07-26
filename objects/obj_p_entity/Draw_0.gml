@@ -19,6 +19,11 @@
 		shader_set_uniform_f(u_flash, flash) // u_flash is id of the float of flash 
 	}
 
+	if (entity_NPC)
+	{
+		entity_animate_sprite()
+	}
+
 	draw_sprite_ext(
 		sprite_index,
 		image_index,

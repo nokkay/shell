@@ -8,6 +8,7 @@
 	global.target_x = -1
 	global.target_y = -1
 	global.target_dir = 0
+	global.ilifted = noone
 	
 	
 	global.icamera = instance_create_layer(PLAYER_START_X,PLAYER_START_Y,layer,obj_camera)

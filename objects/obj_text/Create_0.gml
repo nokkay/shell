@@ -12,7 +12,8 @@
 	lerp_progress = 0 // linear interpretation process, range [0,1]
 	text_progress = 0 // amount of characters shown in message
 
-	background = 0 // frame of textbox, determines sprite used
+	// background = 0 // caused a bug by resetting my fucking textbox background!!!!
+	// review: 0/10 stars caused a 2 hour detour
 	response_selected = 0
 
 	

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"player_state_act",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_state_act",
+  "parent":{
+    "name":"PlayerStateMachine",
+    "path":"folders/Scripts/PlayerStateMachine.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,7 +1,6 @@
 /// @description Draw Textbox
 
 	
-
 	draw_sprite_stretched(spr_textbox, background, x1, y1, x2 - x1, y2 - y1)
 	draw_set_font(fnt_text)
 	draw_set_halign(fa_center)
