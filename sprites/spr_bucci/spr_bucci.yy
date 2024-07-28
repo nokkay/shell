@@ -26,6 +26,7 @@
   "height":128,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"710c9f80-88b7-401a-8b7e-29e68bbe1e09","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"710c9f80-88b7-401a-8b7e-29e68bbe1e09","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
     {"$GMImageLayer":"","%Name":"5331f529-baf1-426f-91b4-7b59cc9f480c","blendMode":0,"displayName":"default (2)","isLocked":false,"name":"5331f529-baf1-426f-91b4-7b59cc9f480c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"90f9b7f3-bd02-4cf1-ad63-5dbee771aeb4","blendMode":0,"displayName":"default (2)","isLocked":false,"name":"90f9b7f3-bd02-4cf1-ad63-5dbee771aeb4","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"eb5171f2-4e50-4f1b-a162-f4efb6b0928e","blendMode":0,"displayName":"default","isLocked":false,"name":"eb5171f2-4e50-4f1b-a162-f4efb6b0928e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -53,8 +54,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"NPC",
+    "path":"folders/Sprites/NPC.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -124,7 +125,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":36,
+    "xorigin":29,
     "yorigin":127,
   },
   "swatchColours":null,

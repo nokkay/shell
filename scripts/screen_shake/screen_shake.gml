@@ -4,7 +4,7 @@
 
 function screen_shake()
 {
-	with (global.icamera)
+	with (global.iCamera)
 	{
 		if (magnitude > shake_remain)
 		{

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"slime_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"slime_functions",
+  "parent":{
+    "name":"EnemyScripts",
+    "path":"folders/Scripts/EnemyScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

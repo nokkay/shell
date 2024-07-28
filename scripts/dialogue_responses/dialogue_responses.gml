@@ -10,10 +10,10 @@ function dialogue_responses()
 	switch(argument0)
 	{
 		case 0: break;
-		case 1: new_textbox("i love men"); break;
-		case 2: new_textbox("how about yuri", 1, ["3:yes women", "4:i hate women"]); break;
-		case 3: new_textbox(":)"); break;
-		case 4: new_textbox(":("); break;
+		case 1: new_textbox("response to choice 1"); break;
+		case 2: new_textbox("response to choice 2", 1, ["3:choice 3", "4:choice 4"]); break;
+		case 3: new_textbox("response to choice 3 :)"); break;
+		case 4: new_textbox("response to choice 4 :("); break;
 		default: show_debug_message("unexpected dialogue error!"); break;
 	}
 }

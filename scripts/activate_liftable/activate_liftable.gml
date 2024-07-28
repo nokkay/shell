@@ -2,11 +2,11 @@
 
 function activate_liftable(_id)
 {
-	if (global.ilifted == noone)
+	if (global.iLifted == noone)
 	{
 		player_act_out_animation(spr_player_lift)
-		global.ilifted = _id
-		with (global.ilifted)
+		global.iLifted = _id
+		with (global.iLifted)
 		{
 			lifted = true
 			persistent = true

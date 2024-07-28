@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"enemy_wait",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"enemy_wait",
+  "parent":{
+    "name":"EnemyScripts",
+    "path":"folders/Scripts/EnemyScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

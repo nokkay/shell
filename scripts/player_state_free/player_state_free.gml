@@ -43,21 +43,61 @@ function player_state_free()
 	if key_activate
 	{
 		//1. check for entity to activate
-		//2. if there is nothing, or there is something, but has no script --> roll!
+		//2. if there is nothing, or there is something, but has no script 
+			// 2a. if we are carrying something, throw it!
+			// 2b. otherwise, roll!
 		//3. otherwise, there is something and it has a script, activate!!
 		//4. if thing activated is NPC, make it face towards us!!!
 		
-		var _activate_distance = 45
-		var _activate_x = lengthdir_x( _activate_distance, direction) 
-		var _activate_y = lengthdir_y( _activate_distance, direction)
-		activate = instance_position(x+_activate_x,y+_activate_y, obj_p_entity)
 		
 		// 1.
+		var _activate_distance = 45
+		var _activate_x = x + lengthdir_x( _activate_distance, direction) 
+		var _activate_y = y + lengthdir_y( _activate_distance, direction)
+		var _activate_size = 8
+		var _activate_list = ds_list_create() // stores list of entities in activate_size detection
+		activate = noone
+		var _entities_found = collision_rectangle_list // contains number of colisions found
+		(
+			_activate_x - _activate_size, // x1
+			_activate_y - _activate_size, // y1
+			_activate_x + _activate_size, // x2
+			_activate_y + _activate_size, // y2
+			p_entity,	// obj to check for
+			false, // precise collisions (no)
+			true, // check for object performing the check (no)
+			_activate_list,	// ds list to store
+			false // ordered (no)
+		)
+		
+		// if the first instance we find is either our lifted entity or it has no script: try the next one
+		while (_entities_found > 0)
+		{	
+			// contains id of instance
+			var _check = _activate_list[| --_entities_found] // --entities_found is the amount found - 1 for correct indexing, works down the list
+			if (_check != global.iLifted) && (_check.entity_activate_script != -1)
+			{
+				activate = _check // found activatable object
+				break
+			}
+			
+		}
+		ds_list_destroy(_activate_list) // delete list from memory
+		
+		
+		
 		if (activate == noone or activate.entity_activate_script == -1) 
 		{
-			// 2.
-			state = player_state_slide
-			move_distance_remaining = slide_distance
+			// 2. throw something if held
+			if (global.iLifted != noone)
+			{
+				player_throw()	
+			}
+			else // otherwise, roll
+			{			
+				state = player_state_slide
+				move_distance_remaining = slide_distance
+			}
 		}
 		else
 		{

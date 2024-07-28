@@ -3,7 +3,7 @@ function player_collision()
 {
 
 	var _collision = false
-	var _entity_list = ds_list_create() // not the actual list but the memory opinter
+	var _entity_list = ds_list_create() // not the actual list but the memory pointer
 	
 	// horizontal tiles
 	if tilemap_get_at_pixel(collision_map, x + xspd, y)
@@ -16,7 +16,7 @@ function player_collision()
 	}
 	
 	// horizontal entities
-	var _entity_count = instance_position_list(x+ xspd, y, obj_p_entity,_entity_list, false)
+	var _entity_count = instance_position_list(x+ xspd, y, p_entity,_entity_list, false)
 	var _snap_x
 	
 	while(_entity_count > 0)
@@ -54,7 +54,7 @@ function player_collision()
 	}
 	
 	// vertical entities
-	var _entity_count = instance_position_list(x, y + yspd, obj_p_entity,_entity_list, false)
+	var _entity_count = instance_position_list(x, y + yspd, p_entity,_entity_list, false)
 	var _snap_y
 	
 	while(_entity_count > 0)

@@ -5,15 +5,15 @@
   "managed":true,
   "name":"obj_tree",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_p_entity","path":"objects/obj_p_entity/obj_p_entity.yy",},"propertyId":{"name":"entity_hit_script","path":"objects/obj_p_entity/obj_p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"entity_hit_solid",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_hit_script","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"entity_hit_solid",},
   ],
   "parent":{
     "name":"Entities",
     "path":"folders/Objects/Entities.yy",
   },
   "parentObjectId":{
-    "name":"obj_p_entity",
-    "path":"objects/obj_p_entity/obj_p_entity.yy",
+    "name":"p_entity",
+    "path":"objects/p_entity/p_entity.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
