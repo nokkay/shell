@@ -20,6 +20,10 @@
 	}
 	
 	
-	draw_text((x1+x2)/2, y1+10, _print)
+	draw_text_ext((x1+x2)/2, y1+13, _print, space_between_lines, max_width)
 	draw_set_color(c_white)
-	draw_text((x1+x2)/2, y1+7, _print)
+	draw_text_ext((x1+x2)/2, y1+10, _print, space_between_lines, max_width)
+	
+	
+	
+	

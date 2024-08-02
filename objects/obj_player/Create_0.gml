@@ -16,13 +16,15 @@
 	distance_bonk_height = 24
 	bonk_spd = 2
 	z = 0
-	
+	invulnerable = 0
+	flash = 0
+	flash_shader = sh_white_flash
 	animation_end_script = -1
 
 // sprites
-	sprite_slide = spr_player_slide
-	sprite_walk = spr_player_walk
-	sprite_idle = spr_player_idle
+	spr_slide = spr_player_slide
+	spr_walk = spr_player_walk
+	spr_idle = spr_player_idle
 	sprite_run = spr_player_run
 	local_frame = 0
 	

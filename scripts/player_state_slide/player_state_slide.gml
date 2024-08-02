@@ -8,7 +8,7 @@ function player_state_slide()
 	var _collided = player_collision()
 	
 	// update sprite
-	sprite_index = sprite_slide
+	sprite_index = spr_slide
 	var _total_frames = sprite_get_number(sprite_index)/4 // how many frames in a direction
 	image_index = (CARDINAL_DIR * _total_frames) + min((1 - (move_distance_remaining/slide_distance)) * _total_frames, _total_frames - 1)
 	
@@ -22,6 +22,6 @@ function player_state_slide()
 	{
 		state = player_state_bonk
 		move_distance_remaining = distance_bonk
-		screen_shake()
+		screen_shake(3, 30)
 	}
 }

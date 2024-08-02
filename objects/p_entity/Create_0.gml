@@ -1,5 +1,6 @@
 /// @description Essential Entity Setup
 
+	direction = 270 // starting direction is down
 	z = 0
 	entity_collision_start = entity_collision
 	grav_start = 0.2
@@ -8,4 +9,10 @@
 	local_frame = 0
 	lifted = 0
 	thrown = false
-	u_flash = shader_get_uniform(sh_white_flash, "flash")
+	entity_drop_list = -1
+	_collided = false
+	
+	flash_shader = sh_white_flash
+	
+	
+	

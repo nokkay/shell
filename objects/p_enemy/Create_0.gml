@@ -8,6 +8,10 @@
 	x_to = xstart
 	y_to = ystart 
 	dir = 0
+	
+	// spawn the enemy in a random direction
+	image_xscale = choose(-1,1)
+	
 	aggro_check = 0
 	aggro_check_duration = 5 // check every so many frames
 	state_target = state

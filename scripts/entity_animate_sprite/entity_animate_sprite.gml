@@ -6,6 +6,7 @@ function entity_animate_sprite()
 {
 	
 // update sprite
+
 	var _dir = CARDINAL_DIR 
 	var _total_frames = sprite_get_number(sprite_index) / 4
 	image_index = local_frame + (_dir * _total_frames)

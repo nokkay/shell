@@ -1,5 +1,7 @@
 
-	margin = 15
+	margin = 25
+	space_between_lines = 56
+	max_width = RESOLUTION_W - 100
 	
 	x1 = RESOLUTION_W/2
 	y1 = RESOLUTION_H - RESOLUTION_H/3

@@ -18,4 +18,7 @@ function player_throw()
 	}
 	player_act_out_animation(spr_player_lift) // vaguely looks like throw animation :^)
 	global.iLifted = noone
+	// reset sprites
+	spr_idle = spr_player_idle
+	spr_walk = spr_player_walk
 }

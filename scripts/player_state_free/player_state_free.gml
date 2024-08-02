@@ -17,8 +17,8 @@ function player_state_free()
 	if input_magnitude != 0 
 	{
 		direction = input_direction
-		sprite_index = sprite_walk
-	}else sprite_index = sprite_idle
+		sprite_index = spr_walk
+	}else sprite_index = spr_idle
 	
 	if (_old_spr != sprite_index) local_frame = 0
 	

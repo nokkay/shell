@@ -4,7 +4,7 @@ function slime_wander()
 {
 	sprite_index = spr_move
 	
-	// at destination or given up?
+	// at destination or give up?
 	if ((x == x_to) && (y == y_to)) or (time_passed > enemy_wander_dist / enemy_spd)
 	{
 		xspd = 0
@@ -16,8 +16,8 @@ function slime_wander()
 			image_index = 0
 		}
 		
-		// set new target destination
-		if (++wait >= wait_duration)
+		// set new target destination with a bit of randomness
+		if (++wait >= wait_duration + irandom_range(-15,240))
 		{
 			wait = 0
 			time_passed = 0
@@ -67,6 +67,9 @@ function slime_chase()
 		var _distance_to_go = point_distance(x,y,x_to,y_to)
 		image_speed = 1.0 // reset speed
 		dir = point_direction(x,y,x_to,y_to)
+		
+		// if player has left the chase radius then return to wander state
+		if (_distance_to_go > enemy_chase_radius) state = ENEMY_STATE.WANDER
 		
 		if (_distance_to_go > enemy_spd)
 		{

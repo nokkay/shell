@@ -3,7 +3,10 @@
 if (!global.game_paused)
 {
 
-	with (obj_player) state = player_state_transition
+	with (obj_player)
+	{
+		if(state != player_state_dead) state = player_state_transition
+	}
 	
 	if (leading == OUT)
 	{

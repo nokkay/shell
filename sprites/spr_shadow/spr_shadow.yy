@@ -23,7 +23,7 @@
   ],
   "name":"spr_shadow",
   "nineSlice":null,
-  "origin":9,
+  "origin":4,
   "parent":{
     "name":"Misc",
     "path":"folders/Sprites/Misc.yy",

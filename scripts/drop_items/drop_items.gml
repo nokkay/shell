@@ -2,10 +2,12 @@
 /// @arg x
 /// @arg y
 /// @arg [items] array of items to drop
+/// @arg spd_multiplier
 
 
 function drop_items()
 {
+	
 	var _items = array_length(argument2)
 	
 	if (_items > 1)
@@ -18,6 +20,7 @@ function drop_items()
 			{
 				direction = _angle
 				spd = 0.75 + (_items * 0.1) + random(0.1)
+				if (argument_count > 3) spd *= argument3
 			}
 			_angle += _angle_per_item
 		}

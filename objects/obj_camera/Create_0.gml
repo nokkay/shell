@@ -11,8 +11,6 @@
 	shake_length = 0
 	shake_mag = 0
 	shake_remain = 0
-	magnitude = 3
-	frames = 30
 	
 	// optional draw for following player (for fun!!)
 	z = 32

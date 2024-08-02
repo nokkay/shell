@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"player_drop_item",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_drop_item",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

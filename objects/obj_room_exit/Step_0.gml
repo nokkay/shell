@@ -2,7 +2,7 @@
 
 	if (instance_exists(obj_player)) && (position_meeting(obj_player.x,obj_player.y,id))
 	{
-			if (!instance_exists(obj_transition))
+			if (!instance_exists(obj_transition)) && (obj_player.state != player_state_dead)
 			{
 				global.target_room = target_room
 	 			global.target_x = target_x

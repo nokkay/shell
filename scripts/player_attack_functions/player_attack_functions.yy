@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"player_attack_functions",
   "parent":{
-    "name":"PlayerAttacks",
-    "path":"folders/Scripts/PlayerAttacks.yy",
+    "name":"PlayerGeneral",
+    "path":"folders/Scripts/PlayerGeneral.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

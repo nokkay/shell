@@ -3,6 +3,7 @@
 
 	if !global.game_paused
 	{
+		depth = -bbox_bottom
 		
 		// collision
 		if (lifted)
@@ -15,7 +16,7 @@
 		}
 		
 		
-		depth = -bbox_bottom			
+					
 		if (lifted) && (instance_exists(obj_player))
 		{
 			// execute after lifting animation
@@ -39,7 +40,20 @@
 				y = ystart + lengthdir_y(throw_dist_travelled, direction)
 				
 				// collision
-				if (tilemap_get_at_pixel(collision_map,x,y) > 0 or place_meeting(x,y, p_entity))
+				if (tilemap_get_at_pixel(collision_map,x,y) )
+				{			 
+					_collided = true
+				}
+				// collision with other entities
+				if (place_meeting(x, y, p_entity)) 
+				{
+				    var other_entity = instance_place(x, y, p_entity)
+				    if (other_entity != noone && other_entity.entity_collision) 
+					{
+				        _collided = true;
+				    }
+				}
+				if (_collided)
 				{
 					thrown = false
 					grav = grav_start
@@ -71,6 +85,7 @@
 				else 
 				{
 					grav = grav_start	
+					_collided = false
 				}
 				
 			}

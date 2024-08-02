@@ -19,7 +19,9 @@
 	
 	if (flash != 0)
 	{
-		shader_set(sh_white_flash)	
+		
+		shader_set(flash_shader)	
+		u_flash = shader_get_uniform(flash_shader, "flash")
 		shader_set_uniform_f(u_flash, flash) // u_flash is id of the float of flash 
 	}
 
