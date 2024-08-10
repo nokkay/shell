@@ -11,7 +11,7 @@
 			
 				// room transition 
 				with (obj_player) state = player_state_transition 
-				room_transition(transition_type, target_room)			
+				room_transition(transition_type, target_room, room)			
 				instance_destroy()
 			}
 	}

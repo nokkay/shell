@@ -6,19 +6,16 @@
   "name":"obj_jaiden",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_activate_script","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"new_textbox",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_activate_args","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[\"you know what the difference between kudos and  hits are on ao3?\",1, [\"1:erm idk\", \"2:kudos is likes hits is views\"]]",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_shadow_scale_x","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1.25",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_NPC","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_collision","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_shadow","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_activate_args","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"[\"dialogue\",1, [\"1:choice 1\", \"2:choice 2\"], NPC_portrait]",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},"propertyId":{"name":"NPC_portrait","path":"objects/obj_npc/obj_npc.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_jaiden_portrait",},
   ],
   "parent":{
-    "name":"Entities",
-    "path":"folders/Objects/Entities.yy",
+    "name":"NPC",
+    "path":"folders/Objects/NPC.yy",
   },
   "parentObjectId":{
-    "name":"p_entity",
-    "path":"objects/p_entity/p_entity.yy",
+    "name":"obj_npc",
+    "path":"objects/obj_npc/obj_npc.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -41,6 +38,9 @@
     "name":"spr_jaiden",
     "path":"sprites/spr_jaiden/spr_jaiden.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_NPC_collision",
+    "path":"sprites/spr_NPC_collision/spr_NPC_collision.yy",
+  },
   "visible":true,
 }

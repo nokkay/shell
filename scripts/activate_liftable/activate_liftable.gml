@@ -1,4 +1,4 @@
-/// @arg id
+/// @arg id Pass id of instance to player
 
 function activate_liftable(_id)
 {

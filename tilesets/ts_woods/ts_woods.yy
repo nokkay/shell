@@ -21,8 +21,8 @@
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"spr_woods_tiles",
-    "path":"sprites/spr_woods_tiles/spr_woods_tiles.yy",
+    "name":"spr_tiles_woods",
+    "path":"sprites/spr_tiles_woods/spr_tiles_woods.yy",
   },
   "spriteNoExport":false,
   "textureGroupId":{

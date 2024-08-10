@@ -9,6 +9,9 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_shadow","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_enemy","path":"objects/p_enemy/p_enemy.yy",},"propertyId":{"name":"enemy_hp","path":"objects/p_enemy/p_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_enemy","path":"objects/p_enemy/p_enemy.yy",},"propertyId":{"name":"enemy_damage_touch","path":"objects/p_enemy/p_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.25",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_enemy","path":"objects/p_enemy/p_enemy.yy",},"propertyId":{"name":"enemy_attack_radius","path":"objects/p_enemy/p_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"96",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_hit_sound","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"snd_slime_hit",},
   ],
   "parent":{
     "name":"Enemies",

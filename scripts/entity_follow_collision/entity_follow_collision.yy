@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"entity_follow_collision",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"entity_follow_collision",
+  "parent":{
+    "name":"Entity",
+    "path":"folders/Scripts/Entity.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

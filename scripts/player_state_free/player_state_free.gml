@@ -26,7 +26,7 @@ function player_state_free()
 	player_animate_sprite();
 
 // attack key logic
-	if key_attack
+	if key_attack && !global.iLifted
 	{
 		state = player_state_attack
 		state_attack = attack_slash
@@ -54,7 +54,7 @@ function player_state_free()
 		var _activate_distance = 45
 		var _activate_x = x + lengthdir_x( _activate_distance, direction) 
 		var _activate_y = y + lengthdir_y( _activate_distance, direction)
-		var _activate_size = 8
+		var _activate_size = 16
 		var _activate_list = ds_list_create() // stores list of entities in activate_size detection
 		activate = noone
 		var _entities_found = collision_rectangle_list // contains number of colisions found
@@ -115,4 +115,54 @@ function player_state_free()
 			}
 		}
 	}
+	
+	// use items
+	if (key_item) && (!key_activate) && (global.player_has_any_items) && (global.player_equipped != ITEM.NONE)
+	{
+		switch (global.player_equipped)
+		{
+			case ITEM.BOMB: use_item_bomb() ; break;
+			case ITEM.BOW: use_item_bow() ; break;
+			case ITEM.HOOK: use_item_hook(); break;
+			default: break;
+		}
+	} 
+	
+	// cycle items
+	if (global.player_has_any_items)
+	{
+		var _cycle_dir = key_item_select_up - key_item_select_down	
+		if (_cycle_dir != 0)
+		{
+			do
+			{
+				global.player_equipped += _cycle_dir
+				if (global.player_equipped < 1) global.player_equipped = ITEM.TYPE_COUNT - 1 // loop under to top
+				if (global.player_equipped >= ITEM.TYPE_COUNT) global.player_equipped = 1 // look over to under
+			}
+			until (global.player_item_unlocked[global.player_equipped]) // cycle until item is one that is unlocked
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

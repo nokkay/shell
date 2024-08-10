@@ -2,4 +2,4 @@
 	// Inherit the parent event
 	event_inherited();
 
-	entity_drop_list = [obj_coin,obj_coin,obj_coin]
+	entity_drop_list =  entity_drop_items(DROP_TYPE.PLANT)

@@ -16,10 +16,12 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":484,
+  "height":482,
   "HTile":false,
   "layers":[
+    {"$GMImageLayer":"","%Name":"35cf805b-7a28-4341-ae47-eb6cd2964a34","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"35cf805b-7a28-4341-ae47-eb6cd2964a34","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"d5f12b6a-530e-4111-abd4-f2e0b067aa6d","blendMode":0,"displayName":"default","isLocked":false,"name":"d5f12b6a-530e-4111-abd4-f2e0b067aa6d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"71d48c35-4843-45f6-a526-eb3db9051969","blendMode":0,"displayName":"Layer 2","isLocked":false,"name":"71d48c35-4843-45f6-a526-eb3db9051969","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_house",
   "nineSlice":null,

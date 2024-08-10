@@ -27,19 +27,32 @@
 				with (origin_instance) dialogue_responses(other.response_scripts[other.response_selected])
 			}
 			
-			
-			instance_destroy()
-			if instance_exists(obj_text_queued)
+			if instance_exists(obj_text_queued) // decrease queue
 			{
 				with (obj_text_queued) ticket--;	
 			}
-			else // last text object
+	
+			if (!instance_exists(obj_text_queued)) // last text object
 			{
 				with obj_player state = last_state	
+				instance_destroy() // destroy last textbox
 			}
+
 		}
-		else if (text_progress > 2) // prevent unwanted presses with small delay
+		else if (text_progress > 5) // prevent unwanted presses with small delay
 		{
 			text_progress = _message_length // show entire message
+			show_portrait = true
+		}
+	}
+	
+	// character portrait
+	if ((_portrait != -1) && (!instance_exists(obj_text_portrait)) && (show_portrait or (x1 * .3 <= x1_target))) // once box is fully drawn, create the portrait
+	{
+		show_debug_message(_portrait)
+		with (instance_create_layer(x1_target + 8, y2 - 10,"Instances",obj_text_portrait))
+		{
+			show_debug_message(other._portrait)
+			sprite_index = other._portrait
 		}
 	}

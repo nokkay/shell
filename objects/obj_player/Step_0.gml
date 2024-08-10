@@ -1,3 +1,4 @@
+/// @desc Inputs + state machine
 
 // inputs
 	key_right = keyboard_check(vk_right) or keyboard_check(ord("D"))
@@ -5,9 +6,11 @@
 	key_left = keyboard_check(vk_left) or keyboard_check(ord("A"))
 	key_down = keyboard_check(vk_down) or keyboard_check(ord("S"))
 	key_activate = keyboard_check_pressed(vk_space)
-	key_attack = keyboard_check_pressed(vk_shift)
-	key_item = keyboard_check_pressed(vk_control)
-	key_emote = keyboard_check(ord("E"))	
+	key_attack = keyboard_check_pressed(ord("F")) or mouse_check_button_pressed(mb_left)
+	key_item = keyboard_check_pressed(vk_shift)
+	key_item_select_up = keyboard_check_pressed(ord("E"))
+	key_item_select_down = keyboard_check_pressed(ord("Q"))
+	key_emote = keyboard_check_pressed(ord("1"))	
 
 	
 	input_direction = point_direction(0,0, key_right - key_left, key_down-key_up)
@@ -20,5 +23,10 @@
 		invulnerable = max(invulnerable-1,0)
 		flash = max(flash-0.05,0)
 	}
+	
+	// update global save stuff
+	global.player_x = x 
+	global.player_y = y 
+	global.player_dir = direction
 
 	depth = -bbox_bottom

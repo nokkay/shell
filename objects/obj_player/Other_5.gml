@@ -1,4 +1,4 @@
-/// @description Player dies and goes to hell
+/// @description Death
 
 	if (state == player_state_dead)
 	{

@@ -17,6 +17,10 @@
 			fric = 0
 			if (_dist < 10) // collect radius
 			{
+				if (collect_sound != -1)
+				{
+					play_sound_struct({sound:collect_sound, pitch:1, loop:false},true, 0.1)	
+				}
 				if (collect_script_arg != -1)
 				{
 					script_execute(collect_script, collect_script_arg)	
@@ -29,6 +33,21 @@
 			}
 		}
 	}
+	
+	// bounce
+	if (bounce_count != 0)
+	{
+		bounce += (pi * bounce_spd)	
+		// reset bounce to beginning of sin wave
+		if (bounce > pi)
+		{
+			bounce -= pi	
+			bounce_height *= bounce_decay
+			bounce_count--
+		}
+		z = (sin(bounce)) * bounce_height
+	}
+	else z = 0
 	
 	
 	x += lengthdir_x(spd,direction)

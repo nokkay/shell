@@ -3,7 +3,8 @@
 	state_attack = attack_slash
 	last_state = state
 	hit_by_attack = -1
-	
+	hit_collided = false // sound hit or miss
+
 	collision_map = layer_tilemap_get_id(layer_get_id("Collision"))
 
 	image_speed = 0
@@ -35,3 +36,11 @@
 		y = global.target_y
 		direction = global.target_dir
 	}
+	if (global.iLifted != noone)
+	{
+		spr_idle = spr_player_idle_carrying
+		spr_walk = spr_player_walk_carrying
+		sprite_index = spr_idle
+	}
+	
+	

@@ -3,8 +3,8 @@
 #macro CARDINAL_DIR round(direction/90)
 #macro ROOM_START rm_woods
 
-#macro PLAYER_START_X 1856
-#macro PLAYER_START_Y 1312
+#macro PLAYER_START_X 1824
+#macro PLAYER_START_Y 1344
 #macro CARRY_HEIGHT 64
 
 #macro RESOLUTION_W 1280
@@ -25,5 +25,16 @@ enum ENEMY_STATE
 	WAIT
 }
 
+enum ITEM
+{
+	NONE,
+	BOMB,
+	BOW,
+	HOOK,
+	TYPE_COUNT
+}
+
 #macro KNOCKBACK 32
+
+
 

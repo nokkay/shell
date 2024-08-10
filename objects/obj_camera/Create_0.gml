@@ -7,19 +7,11 @@
 	x_to = xstart
 	y_to = ystart
 	
+	// camera settings
 	smoothing = 5 
 	shake_length = 0
 	shake_mag = 0
 	shake_remain = 0
-	
-	// optional draw for following player (for fun!!)
-	z = 32
-	follow_radius = 48
-	follow_spd = 2
-	follow_spd_start = follow_spd
-	draw_x = PLAYER_START_X
-	draw_y = PLAYER_START_Y
-	
 	
 	
 	

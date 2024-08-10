@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"player_drop_item",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"PlayerGeneral",
+    "path":"folders/Scripts/PlayerGeneral.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

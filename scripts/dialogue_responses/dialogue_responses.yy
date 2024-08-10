@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"dialogue_responses",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"NPC",
+    "path":"folders/Scripts/NPC.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

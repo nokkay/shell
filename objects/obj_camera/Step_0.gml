@@ -1,5 +1,4 @@
 /// @description Update Camera
-	depth = -bbox_bottom
 	
 // update destination
 	if instance_exists(follow)

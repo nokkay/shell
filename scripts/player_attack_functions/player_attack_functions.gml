@@ -31,15 +31,15 @@
 
 	}
 
-	function calc_attack()
+	function calc_attack(_hitbox_sprite)
 	{
 	
-	///@args hitbox_sprite
+	///@arg hitbox_sprite
 	// set mask index as HB
 	// check for collision
 	// set mask back to player sprite
 
-		mask_index = argument0
+		mask_index = _hitbox_sprite
 		var hit_by_attack_now = ds_list_create() // create list to store ID's of entities being hit
 		var hits = instance_place_list(x,y,p_entity,hit_by_attack_now,false)
 	
@@ -54,16 +54,17 @@
 					ds_list_add(hit_by_attack, hit_ID)
 					with(hit_ID)
 					{
-						// on hit 
 						if (object_is_ancestor(object_index, p_enemy)) // if object hit is enemy
 						{
 							hurt_enemy(id, 5, other.id, KNOCKBACK) // pass id, do 5 damage, other.id passes player id, 10 knockback
 						}
 						if (entity_hit_script != -1) script_execute(entity_hit_script)
-						
+						if (entity_hit_sound != -1) play_sound_struct({sound: entity_hit_sound, pitch:1, loop:false},true,0.1)
 					}
 				}
 			}
+			// on hit 
+			hit_collided = true
 		}
 	
 		ds_list_destroy(hit_by_attack_now) // delete from memory
@@ -78,7 +79,7 @@
 			{
 				enemy_hp -= _damage
 				flash = 0.5 // make obj flash
-				
+
 				// hurt or dead?
 				if (enemy_hp <= 0)
 				{

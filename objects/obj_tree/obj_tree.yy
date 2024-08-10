@@ -6,6 +6,7 @@
   "name":"obj_tree",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_hit_script","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"entity_hit_solid",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_collision","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
   ],
   "parent":{
     "name":"Entities",

@@ -5,13 +5,14 @@
   "managed":true,
   "name":"obj_coin",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_shadow_scale_x","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_collectible","path":"objects/p_collectible/p_collectible.yy",},"propertyId":{"name":"collect_script_arg","path":"objects/p_collectible/p_collectible.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_collectible","path":"objects/p_collectible/p_collectible.yy",},"propertyId":{"name":"collect_script","path":"objects/p_collectible/p_collectible.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"collect_coins",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_collectible","path":"objects/p_collectible/p_collectible.yy",},"propertyId":{"name":"collect_sound","path":"objects/p_collectible/p_collectible.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"snd_coin",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_collectible","path":"objects/p_collectible/p_collectible.yy",},"propertyId":{"name":"create_sound","path":"objects/p_collectible/p_collectible.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"snd_pop",},
   ],
   "parent":{
-    "name":"Entities",
-    "path":"folders/Objects/Entities.yy",
+    "name":"Collectibles",
+    "path":"folders/Objects/Collectibles.yy",
   },
   "parentObjectId":{
     "name":"p_collectible",

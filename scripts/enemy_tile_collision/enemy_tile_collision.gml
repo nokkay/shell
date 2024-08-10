@@ -4,7 +4,7 @@ function enemy_tile_collision()
 	var _collision = false
 
 	// horizontal tile collision
-	if tilemap_get_at_pixel(collision_map, x + xspd, y)
+	if tilemap_get_at_pixel(global.collision_map, x + xspd, y)
 	{
 		// snap to apropriate edge 
 		x -= x mod TILE_SIZE
@@ -16,7 +16,7 @@ function enemy_tile_collision()
 	x += xspd
 	
 	// vertical tile collision
-	if tilemap_get_at_pixel(collision_map, x, y + yspd)
+	if tilemap_get_at_pixel(global.collision_map, x, y + yspd)
 	{
 		// snap to apropriate edge 
 		y -= y mod TILE_SIZE

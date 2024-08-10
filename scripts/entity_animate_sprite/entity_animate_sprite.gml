@@ -1,5 +1,4 @@
-/// @desc turn entity towards player
-/// @arg player's direction 
+/// @desc Turn entity towards player
 
 
 function entity_animate_sprite()

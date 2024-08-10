@@ -1,10 +1,13 @@
-///@desc Creates a new textbox;
+///@desc Creates a new textbox
 ///@arg message 
 ///@arg background 
 ///@arg [responses]
+///@arg portrait
 
 function new_textbox()
 {
+	
+	
 	var _obj
 	if (instance_exists(obj_text)) _obj = obj_text_queued; else _obj = obj_text;
 	with (instance_create_layer(0,0,"Instances", _obj))
@@ -43,6 +46,10 @@ function new_textbox()
 			responses = [-1]
 			response_scripts = [-1]
 		}
+		
+		// character portrait
+		if (argument_count > 3) _portrait = argument[3]
+		else _portrait = -1
 	}
 	
 	with obj_player

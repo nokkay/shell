@@ -17,3 +17,6 @@
 	enemy_script[ENEMY_STATE.HURT] = slime_hurt
 	enemy_script[ENEMY_STATE.DIE] = slime_die
 	
+	// item drops
+	entity_drop_list = entity_drop_items(DROP_TYPE.SLIME)
+	

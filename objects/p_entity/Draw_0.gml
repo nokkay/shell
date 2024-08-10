@@ -1,7 +1,4 @@
 /// @description 
-
-	// sprite of object to draw
-	_draw_sprite = sprite_index
 	
 	// shadow
 	if (entity_shadow) draw_sprite_ext(
@@ -30,6 +27,7 @@
 		entity_animate_sprite()
 	}
 
+	// update sprite
 	draw_sprite_ext(
 		sprite_index,
 		image_index,

@@ -1,4 +1,4 @@
-/// @description draw with z offputs, shadows, invuln, flash
+
 
 	draw_sprite(spr_shadow,0,floor(x),floor(y))
 

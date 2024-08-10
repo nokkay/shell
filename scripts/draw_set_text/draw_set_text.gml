@@ -1,8 +1,8 @@
 /// @desc sets text varibles up
 /// @arg color
-/// @font
-/// @halign
-/// @valign
+/// @arg font
+/// @arg halign
+/// @arg valign
 
 
 function draw_set_text()

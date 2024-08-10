@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"bird_functions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bird_functions",
+  "parent":{
+    "name":"EnemyScripts",
+    "path":"folders/Scripts/EnemyScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

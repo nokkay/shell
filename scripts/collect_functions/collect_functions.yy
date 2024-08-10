@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"collect_functions",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Entity",
+    "path":"folders/Scripts/Entity.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

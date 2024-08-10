@@ -1,8 +1,11 @@
 
 function player_state_dead()
 {
+	// change to death stats
 	xspd = 0
 	yspd = 0
+	global.player_health = 0
+	
 	
 	// if just arriving in this state
 	if (sprite_index != spr_player_die) && (sprite_index != spr_player_dead)
@@ -30,9 +33,19 @@ function player_state_dead()
 		{
 			image_speed = 0
 			image_index = image_number - 1
-			global.target_x = -1 // reset spawn position
-			global.target_y = -1 
-			room_transition(TRANS_TYPE.FADE, rm_woods)
+			// reset spawn position
+			if (instance_exists(obj_spawnpoint))
+			{
+				global.target_x = obj_spawnpoint.x
+				global.target_y = obj_spawnpoint.y
+			}
+			else
+			{
+				global.target_x = -1 
+				global.target_y = -1 
+				show_debug_message("No spawnpoint found")	
+			}
+			room_transition(TRANS_TYPE.FADE, room)
 		}
 	}
 }

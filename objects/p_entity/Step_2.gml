@@ -58,6 +58,10 @@
 					thrown = false
 					grav = grav_start
 				}
+				else
+				{
+					grav = 0	
+				}
 				
 				throw_percent = throw_start_percent + lerp(0, 1 - throw_start_percent, throw_dist_travelled/throw_dist)
 				z = throw_peak_height * sin(throw_percent * pi)

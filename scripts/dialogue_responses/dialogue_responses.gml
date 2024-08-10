@@ -22,6 +22,7 @@ function dialogue_responses()
 			global.quest_status[? "the_hat_quest"] = 1
 		}break;
 		case 6: new_textbox(":(") break;
+		case 7: purchase_item(activate.item, activate.item_amount, activate.item_cost) break;
 		default: show_debug_message("unexpected dialogue error! check your colons, breaks and in room instances!"); break;
 	}
 }

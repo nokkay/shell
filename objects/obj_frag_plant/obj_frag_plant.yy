@@ -1,14 +1,12 @@
 {
   "$GMObject":"",
   "%Name":"obj_frag_plant",
-  "eventList":[
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_frag_plant",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fragment","path":"objects/obj_fragment/obj_fragment.yy",},"propertyId":{"name":"bounce_count","path":"objects/obj_fragment/obj_fragment.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
@@ -30,13 +28,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"bounce_count","filters":[],"listItems":[],"multiselect":false,"name":"bounce_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"bounce_spd","filters":[],"listItems":[],"multiselect":false,"name":"bounce_spd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":".05","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"bounce_height","filters":[],"listItems":[],"multiselect":false,"name":"bounce_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"8","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"deteriorate_after","filters":[],"listItems":[],"multiselect":false,"name":"deteriorate_after","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"300","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"deteriorate_time","filters":[],"listItems":[],"multiselect":false,"name":"deteriorate_time","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"90","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

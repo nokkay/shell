@@ -4,13 +4,14 @@
   "eventList":[
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"p_collectible",
   "overriddenProperties":[],
   "parent":{
-    "name":"Entities",
-    "path":"folders/Objects/Entities.yy",
+    "name":"Collectibles",
+    "path":"folders/Objects/Collectibles.yy",
   },
   "parentObjectId":{
     "name":"p_entity",
@@ -32,6 +33,11 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"collect_script","filters":[],"listItems":[],"multiselect":false,"name":"collect_script","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"collect_script_arg","filters":[],"listItems":[],"multiselect":false,"name":"collect_script_arg","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"collect_sound","filters":[],"listItems":[],"multiselect":false,"name":"collect_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_pop","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"create_sound","filters":[],"listItems":[],"multiselect":false,"name":"create_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_pop","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"bounce_count","filters":[],"listItems":[],"multiselect":false,"name":"bounce_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"bounce_spd","filters":[],"listItems":[],"multiselect":false,"name":"bounce_spd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"bounce_height","filters":[],"listItems":[],"multiselect":false,"name":"bounce_height","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"16","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

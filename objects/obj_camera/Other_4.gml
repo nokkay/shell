@@ -4,11 +4,14 @@
 	{	
 		cam = view_camera[0]
 	}
-
-	if (instance_exists(obj_player) && global.target_x != -1) // ignore first spawn in
+	
+	if (instance_exists(follow)) // spawn on player
+	{
+		x = follow.x 
+		y = follow.y
+	}
+	else if (global.target_x != -1) // spawn where player should be
 	{
 		x = global.target_x
 		y = global.target_y
-		draw_x = global.target_x
-		draw_y = global.target_y
 	}

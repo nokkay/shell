@@ -1,6 +1,6 @@
-///@desc
-///@args script
-///@args args
+/// @desc
+/// @arg script Script to execute
+/// @arg args Arguments to pass to script
 
 function execute_array()
 {

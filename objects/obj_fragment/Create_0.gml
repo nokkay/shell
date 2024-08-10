@@ -1,7 +1,6 @@
 /// @description 
 
 	bounce = 0
-	bounce_decay = 0.6
 	deteriorate = 0
 	z = 0
 	spd = 0

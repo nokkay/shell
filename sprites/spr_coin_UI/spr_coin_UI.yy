@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_coin_UI",
   "bboxMode":0,
-  "bbox_bottom":47,
+  "bbox_bottom":25,
   "bbox_left":0,
-  "bbox_right":31,
+  "bbox_right":23,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,11 +16,10 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":48,
+  "height":26,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"028e2694-93cc-4543-aa3e-d9f33ce3a102","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"028e2694-93cc-4543-aa3e-d9f33ce3a102","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
-    {"$GMImageLayer":"","%Name":"a6803c1a-a1f4-410c-8e3b-5e3278c6450f","blendMode":0,"displayName":"default","isLocked":false,"name":"a6803c1a-a1f4-410c-8e3b-5e3278c6450f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_coin_UI",
   "nineSlice":{
@@ -45,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Misc",
-    "path":"folders/Sprites/Misc.yy",
+    "name":"UI",
+    "path":"folders/Sprites/UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -106,5 +105,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":32,
+  "width":24,
 }

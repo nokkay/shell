@@ -1,6 +1,7 @@
-/// @description Pause the Game
+/// @description Pause the Game + track player pos
 
-	if keyboard_check_pressed(vk_escape)
+
+	if (keyboard_check_pressed(vk_escape) && (!instance_exists(obj_transition)) && (obj_UI.visible == true))
 	{
 		global.game_paused = !global.game_paused
 		
@@ -14,7 +15,8 @@
 		}
 		else
 		{
-			with all{
+			with all
+			{
 				image_speed = game_paused_image_spd	
 			}
 		}
