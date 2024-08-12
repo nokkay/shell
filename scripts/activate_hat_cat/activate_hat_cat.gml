@@ -21,7 +21,7 @@ function activate_hat_cat()
 				new_textbox("Hey! You there! Could you help me?")
 				new_textbox("I lost my favorite hat when it blew into a nearby cave...")
 				new_textbox("I would fetch it myself but I keep hearing these terrible sounds from within!")
-				new_textbox("Could you help me find my missing hat?",1,
+				new_textbox("Could you help me find my missing hat?",1,-1,0,
 				["5:Of course!","6:This task is beneath me"])
 			}
 		} break

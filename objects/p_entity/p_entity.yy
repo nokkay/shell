@@ -46,6 +46,7 @@
     {"$GMObjectProperty":"v1","%Name":"entity_throw_break","filters":[],"listItems":[],"multiselect":false,"name":"entity_throw_break","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"entity_throw_dist","filters":[],"listItems":[],"multiselect":false,"name":"entity_throw_dist","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"104","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"entity_drop_spd_multiplier","filters":[],"listItems":[],"multiselect":false,"name":"entity_drop_spd_multiplier","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"NPC_portrait","filters":[],"listItems":[],"multiselect":false,"name":"NPC_portrait","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

@@ -24,7 +24,7 @@
 			if responses[0] != -1
 			{
 				// inputs choice from given responses and returns the npc response to your choice
-				with (origin_instance) dialogue_responses(other.response_scripts[other.response_selected])
+				with (origin_instance) dialogue_responses(other.response_scripts[other.response_selected], other.NPC_id)
 			}
 			
 			if instance_exists(obj_text_queued) // decrease queue
@@ -46,13 +46,3 @@
 		}
 	}
 	
-	// character portrait
-	if ((_portrait != -1) && (!instance_exists(obj_text_portrait)) && (show_portrait or (x1 * .3 <= x1_target))) // once box is fully drawn, create the portrait
-	{
-		show_debug_message(_portrait)
-		with (instance_create_layer(x1_target + 8, y2 - 10,"Instances",obj_text_portrait))
-		{
-			show_debug_message(other._portrait)
-			sprite_index = other._portrait
-		}
-	}

@@ -34,10 +34,14 @@
 	global.quest_status = ds_map_create()
 	global.quest_status[? "the_hat_quest"] = 0
 	
+	// input keys
+	global.activate_key = vk_space
+	
 	// game managers
 	global.iLifted = noone
 	global.iCamera = instance_create_layer(PLAYER_START_X,PLAYER_START_Y,layer,obj_camera)
 	global.iUI = instance_create_layer(0,0,layer,obj_UI)
+	global.iMusic = instance_create_layer(0,0,layer,obj_music)
 	
 	surface_resize(application_surface, RESOLUTION_W, RESOLUTION_H)
 	

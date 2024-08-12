@@ -24,6 +24,18 @@
 	draw_set_color(c_white)
 	draw_text_ext((x1+x2)/2, y1+10, _print, space_between_lines, max_width)
 	
+
+	// character portrait
+	if ((NPC_id != -1) && (show_portrait or (x1 * .3 <= x1_target))) // once box is fully drawn, create the portrait
+	{
+		// fade in 
+		if (alpha < 1) alpha += fade
+
+		// draw the sprite
+		draw_sprite_ext(NPC_id.NPC_portrait,subimage, x1_target + 8, y2 - 10,image_xscale,image_yscale,0,c_white,alpha) // magic number
+		
+	}
+	
 	
 	
 	

@@ -1,8 +1,10 @@
-///@desc Creates a new textbox
-///@arg message 
-///@arg background 
-///@arg [responses]
-///@arg portrait
+/// @desc Creates a new textbox
+/// @arg message 0
+/// @arg background 1
+/// @arg id 2
+/// @arg subimage 3
+/// @arg [responses] 4
+
 
 function new_textbox()
 {
@@ -12,14 +14,18 @@ function new_textbox()
 	if (instance_exists(obj_text)) _obj = obj_text_queued; else _obj = obj_text;
 	with (instance_create_layer(0,0,"Instances", _obj))
 	{
-		_message = argument[0]
+		_message = argument[0] // message
 		
 		if (instance_exists(other)) origin_instance = other.id; else origin_instance = noone;
 		if (argument_count > 1) background = argument[1]; else background = 1;
-		if (argument_count > 2)
+		// portrait
+		if (argument_count > 2) NPC_id = argument[2]; else NPC_id = -1 // portrait
+		if (argument_count > 3) subimage = argument[3]; else subimage = 0 // subimage
+		// responses
+		if (argument_count > 4)
 		{
 			// populate the responses array
-			var _array = argument[2];
+			var _array = argument[4];
 			for(var _i=0; _i<array_length(_array);_i++)
 			{
 				responses[_i]=_array[_i];
@@ -47,9 +53,6 @@ function new_textbox()
 			response_scripts = [-1]
 		}
 		
-		// character portrait
-		if (argument_count > 3) _portrait = argument[3]
-		else _portrait = -1
 	}
 	
 	with obj_player

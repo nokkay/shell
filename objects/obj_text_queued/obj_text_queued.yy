@@ -9,8 +9,8 @@
   "name":"obj_text_queued",
   "overriddenProperties":[],
   "parent":{
-    "name":"GameObjects",
-    "path":"folders/Objects/GameObjects.yy",
+    "name":"Text + Room",
+    "path":"folders/Objects/Text + Room.yy",
   },
   "parentObjectId":null,
   "persistent":false,

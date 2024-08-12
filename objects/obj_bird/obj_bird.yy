@@ -12,6 +12,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_shadow_scale_x","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":".5",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_shadow_scale_y","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":".5",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_enemy","path":"objects/p_enemy/p_enemy.yy",},"propertyId":{"name":"enemy_damage_touch","path":"objects/p_enemy/p_enemy.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.25",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"p_entity","path":"objects/p_entity/p_entity.yy",},"propertyId":{"name":"entity_hit_sound","path":"objects/p_entity/p_entity.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"snd_bird_tweet",},
   ],
   "parent":{
     "name":"Enemies",

@@ -1,5 +1,6 @@
 /// @desc dialogue reponses given a script_number
 /// @arg script_number
+/// @arg id of npc
 
 // argument0 message from npc
 // argument1 background of textbox
@@ -9,13 +10,14 @@
 
 function dialogue_responses()
 {
-	switch(argument0)
+	if (argument_count > 1) var npc_id = argument[1]; else npc_id = -1
+	switch(argument[0])
 	{
 		case 0: break;
-		case 1: new_textbox("kys"); break;
-		case 2: new_textbox("tank u :3", 1, ["3:ye"]); break;
-		case 3: new_textbox("ye"); break;
-		case 4: new_textbox(":("); break;
+		case 1: new_textbox("response 1",1,npc_id,1,["2:go 2","3:go 3"]); break;
+		case 2: new_textbox("response 2",1,npc_id,2); break;
+		case 3: new_textbox("response 3"); break;
+		case 4: new_textbox("response 4"); break;
 		case 5: 
 		{
 			new_textbox("Thank you so much! I'll be awaiting your return eagerly!")

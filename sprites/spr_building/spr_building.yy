@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_building",
   "bboxMode":0,
-  "bbox_bottom":191,
+  "bbox_bottom":287,
   "bbox_left":0,
   "bbox_right":351,
   "bbox_top":0,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"46c572b8-892d-4a5f-bcb0-f6b04867ac78","name":"46c572b8-892d-4a5f-bcb0-f6b04867ac78","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":32,
-  "gridY":32,
+  "gridX":16,
+  "gridY":16,
   "height":300,
   "HTile":false,
   "layers":[

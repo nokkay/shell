@@ -1,7 +1,7 @@
 /// @description on end step event to ensure everything happens AFTER everything in step events have been processed, prevents inputs overflowing
 
 // disable UI on title screen
-if (room == rm_title) visible = false; else visible = true
+if (room != rm_title) visible = true
 
 
 if (global.game_paused)

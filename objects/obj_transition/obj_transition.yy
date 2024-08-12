@@ -10,8 +10,8 @@
   "name":"obj_transition",
   "overriddenProperties":[],
   "parent":{
-    "name":"GameObjects",
-    "path":"folders/Objects/GameObjects.yy",
+    "name":"Text + Room",
+    "path":"folders/Objects/Text + Room.yy",
   },
   "parentObjectId":null,
   "persistent":true,
