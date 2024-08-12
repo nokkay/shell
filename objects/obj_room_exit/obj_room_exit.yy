@@ -34,6 +34,7 @@
         "TRANS_TYPE.FADE",
       ],"multiselect":false,"name":"transition_type","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"TRANS_TYPE.FADE","varType":6,},
     {"$GMObjectProperty":"v1","%Name":"need_activate","filters":[],"listItems":[],"multiselect":false,"name":"need_activate","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"activate_sound","filters":[],"listItems":[],"multiselect":false,"name":"activate_sound","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_boing","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

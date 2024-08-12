@@ -14,6 +14,9 @@
 	if (response_selected > _max) response_selected = _min
 	if (response_selected < _min) response_selected = _max
 	
+	// play text sound
+	if (text_progress <= string_length(_message) && NPC_id != -1) play_sound_struct({sound:snd_text, pitch:NPC_id.text_pitch},true, .1,false)
+	
 	
 	// end message
 	if keyboard_check_pressed(vk_space)
@@ -21,6 +24,7 @@
 		var _message_length = string_length(_message)	
 		if (text_progress >= _message_length) // whole message shown
 		{
+			
 			if responses[0] != -1
 			{
 				// inputs choice from given responses and returns the npc response to your choice

@@ -8,4 +8,4 @@
 	
 	// sound
 	if (create_sound != 1)
-	play_sound_struct({sound:create_sound, pitch:1},true, 0.1)
+	play_sound_struct({sound:create_sound, pitch:1},true, 0.1,false)

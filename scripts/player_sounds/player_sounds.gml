@@ -25,12 +25,12 @@ function play_sound_attack()
 	{
 		if (hit_collided) // hit == thunk!
 		{
-			play_sound(_sound_hit, true, 0.25)
+			play_sound(_sound_hit, true, 0.25, false)
 			hit_collided = false // reset
 		}
 		else // miss == whiff!
 		{
-			play_sound(_sound_miss, true, 0.25)
+			play_sound(_sound_miss, true, 0.25, false)
 		}
 		
 	}
@@ -52,7 +52,7 @@ function play_sound_walk()
 	// only play on walking frames 0 and 2
 	if ((_sound != -1) && (image_index % 4 == 0 || image_index % 4 == 2))
 	{
-		play_sound(_sound, true, 0.15)
+		play_sound(_sound, true, 0.15, false)
 	}
 	
 }

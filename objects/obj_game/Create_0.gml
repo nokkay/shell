@@ -20,7 +20,7 @@
 	global.player_dir = 3
 	global.player_health_max = 3
 	global.player_health = 2
-	global.player_money = 0
+	global.player_money = 50
 	
 	// items
 	global.player_has_any_items = false

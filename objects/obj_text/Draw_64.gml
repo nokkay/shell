@@ -26,7 +26,7 @@
 	
 
 	// character portrait
-	if ((NPC_id != -1) && (show_portrait or (x1 * .3 <= x1_target))) // once box is fully drawn, create the portrait
+	if ((subimage != -1 && NPC_id != -1 && NPC_id.NPC_portrait != -1) && (show_portrait or (x1 * .3 <= x1_target))) // once box is fully drawn, create the portrait
 	{
 		// fade in 
 		if (alpha < 1) alpha += fade

@@ -59,7 +59,7 @@
 							hurt_enemy(id, 5, other.id, KNOCKBACK) // pass id, do 5 damage, other.id passes player id, 10 knockback
 						}
 						if (entity_hit_script != -1) script_execute(entity_hit_script)
-						if (entity_hit_sound != -1) play_sound_struct({sound: entity_hit_sound, pitch:1, loop:false},true,0.1)
+						if (entity_hit_sound != -1) play_sound_struct({sound: entity_hit_sound, pitch:1},true,0.1,false)
 					}
 				}
 			}

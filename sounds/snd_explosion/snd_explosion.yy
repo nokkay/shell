@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_metalpipe",
+  "%Name":"snd_explosion",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.854694,
-  "name":"snd_metalpipe",
+  "duration":2.115918,
+  "name":"snd_explosion",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_metalpipe.mp3",
+  "soundFile":"snd_explosion.mp3",
   "type":0,
-  "volume":0.05,
+  "volume":0.75,
 }

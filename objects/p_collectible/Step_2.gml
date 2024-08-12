@@ -19,7 +19,7 @@
 			{
 				if (collect_sound != -1)
 				{
-					play_sound_struct({sound:collect_sound, pitch:1, loop:false},true, 0.1)	
+					play_sound_struct({sound:collect_sound, pitch:1},true, 0.1,true)	
 				}
 				if (collect_script_arg != -1)
 				{
