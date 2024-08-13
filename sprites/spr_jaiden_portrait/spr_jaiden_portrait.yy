@@ -20,7 +20,8 @@
   "height":450,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"2a94db7a-41bf-4fe6-b922-634c39db39c0","blendMode":0,"displayName":"default (2)","isLocked":false,"name":"2a94db7a-41bf-4fe6-b922-634c39db39c0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"b14df5e6-529c-453d-bb90-43c601ef5b88","blendMode":0,"displayName":"Layer 1","isLocked":false,"name":"b14df5e6-529c-453d-bb90-43c601ef5b88","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"2a94db7a-41bf-4fe6-b922-634c39db39c0","blendMode":0,"displayName":"default (2)","isLocked":true,"name":"2a94db7a-41bf-4fe6-b922-634c39db39c0","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
     {"$GMImageLayer":"","%Name":"c5dbcd88-5761-4be8-ab50-ecf6cb5dc698","blendMode":0,"displayName":"default","isLocked":false,"name":"c5dbcd88-5761-4be8-ab50-ecf6cb5dc698","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":false,},
   ],
   "name":"spr_jaiden_portrait",

@@ -270,11 +270,11 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"roomId":{"name":"rm_parent","path":"rooms/rm_parent/rm_parent.yy",},},
+    {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_woods","path":"rooms/rm_woods/rm_woods.yy",},},
     {"roomId":{"name":"rm_woods_path","path":"rooms/rm_woods_path/rm_woods_path.yy",},},
-    {"roomId":{"name":"rm_shop","path":"rooms/rm_shop/rm_shop.yy",},},
-    {"roomId":{"name":"rm_title","path":"rooms/rm_title/rm_title.yy",},},
     {"roomId":{"name":"rm_village_bar","path":"rooms/rm_village_bar/rm_village_bar.yy",},},
+    {"roomId":{"name":"rm_shop","path":"rooms/rm_shop/rm_shop.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

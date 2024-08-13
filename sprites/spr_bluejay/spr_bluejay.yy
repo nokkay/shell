@@ -2,7 +2,7 @@
   "$GMSprite":"",
   "%Name":"spr_bluejay",
   "bboxMode":2,
-  "bbox_bottom":34,
+  "bbox_bottom":46,
   "bbox_left":2,
   "bbox_right":27,
   "bbox_top":6,
