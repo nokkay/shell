@@ -1,4 +1,3 @@
 
 	event_inherited()
-	depth = -399
-
+	if (item_depth != -1) depth = item_depth; else depth = -bbox_bottom

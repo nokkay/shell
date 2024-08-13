@@ -49,6 +49,7 @@
 			{
 				// if this instance has not yet been hit by this attack, hit it!
 				var hit_ID = hit_by_attack_now[| i] // way to reference a DS list
+				
 				if (ds_list_find_index(hit_by_attack, hit_ID) == -1) // goes through ds_list and tries to find the hit_ID, see what HASNT been hit yet
 				{
 					ds_list_add(hit_by_attack, hit_ID)
@@ -56,15 +57,13 @@
 					{
 						if (object_is_ancestor(object_index, p_enemy)) // if object hit is enemy
 						{
-							hurt_enemy(id, 5, other.id, KNOCKBACK) // pass id, do 5 damage, other.id passes player id, 10 knockback
+							hurt_enemy(id, 5, other.id, hit_ID.enemy_knockback) // pass id, do 5 damage, other.id passes player id, knockback
 						}
 						if (entity_hit_script != -1) script_execute(entity_hit_script)
 						if (entity_hit_sound != -1) play_sound_struct({sound: entity_hit_sound, pitch:1},true,0.1,false)
 					}
 				}
 			}
-			// on hit 
-			hit_collided = true
 		}
 	
 		ds_list_destroy(hit_by_attack_now) // delete from memory

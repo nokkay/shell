@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.034667,
+  "duration":0.24,
   "name":"snd_slime_hit",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_slime_hit.wav",
+  "soundFile":"snd_slime_hit.mp3",
   "type":0,
   "volume":1.0,
 }

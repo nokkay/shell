@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"obj_treeB",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_tree","path":"objects/obj_tree/obj_tree.yy",},"propertyId":{"name":"fade_on_touch","path":"objects/obj_tree/obj_tree.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_treeB_hb",},
+  ],
   "parent":{
     "name":"Entities",
     "path":"folders/Objects/Entities.yy",

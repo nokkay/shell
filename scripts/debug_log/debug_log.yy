@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"debug_log",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"debug_log",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

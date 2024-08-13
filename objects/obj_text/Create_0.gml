@@ -1,5 +1,5 @@
 
-	
+
 	if (!instance_exists(obj_text_queued)) first_text = true
 	else first_text = false
 
@@ -37,7 +37,6 @@
 	
 	// portrait
 	show_portrait = false
-	depth = -1 // UI elements are at depth 0, draw on top of them
 	if (!instance_exists(obj_text_queued)) alpha = 0.0; else alpha = 1.0 // only fade in on first time
 	fade = 0.05
 

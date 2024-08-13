@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_player_slash_whiff",
+  "%Name":"snd_player_slash",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,7 +10,7 @@
   "compression":0,
   "conversionMode":0,
   "duration":0.48,
-  "name":"snd_player_slash_whiff",
+  "name":"snd_player_slash",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_player_slash_whiff.mp3",
+  "soundFile":"snd_player_slash.mp3",
   "type":0,
   "volume":1.0,
 }

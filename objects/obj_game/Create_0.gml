@@ -30,6 +30,13 @@
 	global.player_ammo[ITEM.BOMB] = 0
 	global.player_ammo[ITEM.BOW] = 0
 	
+	// item enable
+	global.player_has_any_items = true
+	global.player_item_unlocked[ITEM.BOMB] = true
+	global.player_item_unlocked[ITEM.BOW] = true
+	global.player_ammo[ITEM.BOMB] = 20
+	global.player_ammo[ITEM.BOW] = 20
+	
 	// quests
 	global.quest_status = ds_map_create()
 	global.quest_status[? "the_hat_quest"] = 0

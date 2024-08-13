@@ -1,5 +1,6 @@
 /// @desc Draw UI
 
+
 // draw health
 	// good practice to create local variable to reference to globals
 	var _player_health = global.player_health
@@ -64,7 +65,16 @@
 			
 		}
 	}
+	
+// draw controls (top right)
 
+	draw_set_text(c_white,fnt_ammo,fa_left,fa_top)
+	draw_text
+		(
+			RESOLUTION_W - 184, margin_y, "CTRL RUN\nSHIFT SLIDE\nSPACE INTERACT\nE ITEM\nQ ITEM SELECT\nZ RIZZ"
+		)
+	
+	
 // draw pause screen
 
 	if (global.game_paused)
@@ -97,24 +107,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	

@@ -4,8 +4,8 @@ function player_state_free()
 	
 	
 // spd
-	xspd = lengthdir_x(input_magnitude * walk_spd, input_direction)
-	yspd = lengthdir_y(input_magnitude * walk_spd, input_direction)
+	xspd = lengthdir_x(input_magnitude * move_spd, input_direction)
+	yspd = lengthdir_y(input_magnitude * move_spd, input_direction)
 	
 
 // collision + move
@@ -19,11 +19,18 @@ function player_state_free()
 		direction = input_direction
 		sprite_index = spr_walk
 	}else sprite_index = spr_idle
+	// run key logic
+	if (key_run)
+	{
+		sprite_index = sprite_run
+		move_spd = run_spd
+	}
+	else move_spd = walk_spd
 	
 	if (_old_spr != sprite_index) local_frame = 0
 	
 // update image index
-	player_animate_sprite();
+	player_animate_sprite()
 
 // attack key logic
 	if key_attack && !global.iLifted
@@ -37,6 +44,16 @@ function player_state_free()
 	{
 		state = player_state_emote	
 	}
+	
+	
+// roll key logic
+
+	if key_roll
+	{
+		state = player_state_slide
+		move_distance_remaining = slide_distance	
+	}
+	
 
 
 // activate key logic
@@ -45,7 +62,6 @@ function player_state_free()
 		//1. check for entity to activate
 		//2. if there is nothing, or there is something, but has no script 
 			// 2a. if we are carrying something, throw it!
-			// 2b. otherwise, roll!
 		//3. otherwise, there is something and it has a script, activate!!
 		//4. if thing activated is NPC, make it face towards us!!!
 		
@@ -93,11 +109,6 @@ function player_state_free()
 			{
 				player_throw()	
 			}
-			else // otherwise, roll
-			{			
-				state = player_state_slide
-				move_distance_remaining = slide_distance
-			}
 		}
 		else
 		{
@@ -131,7 +142,7 @@ function player_state_free()
 	// cycle items
 	if (global.player_has_any_items)
 	{
-		var _cycle_dir = key_item_select_up - key_item_select_down	
+		var _cycle_dir = key_item_select_up// - key_item_select_down	
 		if (_cycle_dir != 0)
 		{
 			do

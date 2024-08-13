@@ -9,21 +9,21 @@ function return_sound_settings(_sound)
 	// must include pitch setting so we can randomize it later
 	switch (_sound)
 	{
-		case (snd_player_slash_hit):
+		case (snd_sword_hit):
 	
 		    _sound_setting = 
 			{
-		        sound: snd_player_slash_hit,
+		        sound: snd_sword_hit,
 				priority:0,
 				loop:false,
 				pitch:1
 		    }
 			break
 			
-		case (snd_player_slash_whiff):
+		case (snd_player_slash):
 			_sound_setting = 
 			{
-				sound: snd_player_slash_whiff,
+				sound: snd_player_slash,
 				priority:0,
 				loop:false,
 				pitch:1

@@ -3,14 +3,15 @@
 	state_attack = attack_slash
 	last_state = state
 	hit_by_attack = -1
-	hit_collided = false // sound hit or miss
-
+	
 	collision_map = layer_tilemap_get_id(layer_get_id("Collision"))
 
 	image_speed = 0
 	xspd = 0
 	yspd = 0
 	walk_spd = 4
+	run_spd = 5
+	move_spd = walk_spd
 	slide_spd = 6
 	slide_distance = 140 
 	distance_bonk = 80

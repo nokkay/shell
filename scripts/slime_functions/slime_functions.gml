@@ -154,14 +154,15 @@ function slime_attack()
 
 function slime_hurt()
 {
+
 	sprite_index = spr_hurt
 	var _distance_to_go = point_distance(x,y,x_to,y_to)
-	if (_distance_to_go > enemy_spd)
+	if (_distance_to_go > enemy_knockback_speed)
 	{
 		image_speed = 1.0	
 		dir = point_direction(x,y,x_to,y_to)
-		xspd = lengthdir_x(enemy_spd, dir)
-		yspd = lengthdir_y(enemy_spd, dir)
+		xspd = lengthdir_x(enemy_knockback_speed, dir)
+		yspd = lengthdir_y(enemy_knockback_speed, dir)
 		if (xspd != 0) image_xscale = -sign(xspd)
 	
 		// collide and move, if there is a collision, then stop knockback
@@ -185,11 +186,11 @@ function slime_die()
 	sprite_index = spr_die
 	image_speed = 1.0
 	var _distance_to_go = point_distance(x,y,x_to,y_to)
-	if (_distance_to_go > enemy_spd)
+	if (_distance_to_go > enemy_knockback_speed)
 	{
 		dir = point_direction(x,y,x_to,y_to)
-		xspd = lengthdir_x(enemy_spd,dir)
-		yspd = lengthdir_y(enemy_spd,dir)
+		xspd = lengthdir_x(enemy_knockback_speed,dir)
+		yspd = lengthdir_y(enemy_knockback_speed,dir)
 		if (xspd != 0) image_xscale = -sign(xspd)
 		
 		// colide and move

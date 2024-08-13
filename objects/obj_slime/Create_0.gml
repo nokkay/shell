@@ -1,6 +1,6 @@
 
 	// Inherit the parent event
-	event_inherited();
+	event_inherited()
 
 	state = ENEMY_STATE.WANDER
 
@@ -19,4 +19,17 @@
 	
 	// item drops
 	entity_drop_list = entity_drop_items(DROP_TYPE.SLIME)
+
+
+
+	// color
+	hue_min = 45  // Yellow
+	hue_max = 200 // Purple
 	
+	mapped_hue = map_value(x*y, 0, room_width* room_height, hue_min, hue_max) // based on location calculate the mapped color
+	saturation = irandom_range(115, 135) 
+	value = irandom_range(235, 255) 
+
+	image_blend = make_color_hsv(mapped_hue, saturation, value)
+	
+

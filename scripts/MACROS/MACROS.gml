@@ -1,8 +1,8 @@
 #macro FRAME_RATE 60
 #macro TILE_SIZE 16
 #macro CARDINAL_DIR round(direction/90)
-//#macro ROOM_START rm_woods // start in rm_title
-#macro ROOM_START rm_woods
+#macro ROOM_START rm_title // start in rm_title
+//#macro ROOM_START rm_woods
 
 #macro PLAYER_START_X 1824
 #macro PLAYER_START_Y 1344

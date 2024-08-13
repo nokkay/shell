@@ -40,6 +40,8 @@
     {"$GMObjectProperty":"v1","%Name":"enemy_hurt_on_touch","filters":[],"listItems":[],"multiselect":false,"name":"enemy_hurt_on_touch","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"enemy_force_touch","filters":[],"listItems":[],"multiselect":false,"name":"enemy_force_touch","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"64","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"enemy_damage_touch","filters":[],"listItems":[],"multiselect":false,"name":"enemy_damage_touch","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.5","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"enemy_knockback","filters":[],"listItems":[],"multiselect":false,"name":"enemy_knockback","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"32","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"enemy_knockback_speed","filters":[],"listItems":[],"multiselect":false,"name":"enemy_knockback_speed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"enemy_spd","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

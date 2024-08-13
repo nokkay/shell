@@ -1,5 +1,7 @@
 /// @description Draw Textbox
 
+
+	debug_log($"Text: {depth}")
 	
 	draw_sprite_stretched(spr_textbox, background, x1, y1, x2 - x1, y2 - y1)
 	draw_set_font(fnt_text)
@@ -23,7 +25,7 @@
 	draw_text_ext((x1+x2)/2, y1+13, _print, space_between_lines, max_width)
 	draw_set_color(c_white)
 	draw_text_ext((x1+x2)/2, y1+10, _print, space_between_lines, max_width)
-	
+
 
 	// character portrait
 	if ((subimage != -1 && NPC_id != -1 && NPC_id.NPC_portrait != -1) && (show_portrait or (x1 * .3 <= x1_target))) // once box is fully drawn, create the portrait
