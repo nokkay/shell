@@ -102,13 +102,15 @@ function slime_chase()
 }
 
 
+///@arg Initial attack speed, decreases
+
 function slime_attack()
 {
+	// set initial spd
+	var _spd = enemy_spd * 3
+	
 	// reset sprite
 	sprite_index = spr_attack
-	
-	// how fast to move
-	var _spd = enemy_spd * 2
 	
 	// dont move while still getting ready to jump
 	if (image_index < 2) _spd = 0 
@@ -125,6 +127,7 @@ function slime_attack()
 	// move
 	if (_distance_to_go > _spd)
 	{
+		if (_spd > enemy_spd) _spd *= 0.95
 		dir = point_direction(x,y,x_to,y_to)
 		xspd = lengthdir_x(_spd,dir)
 		yspd = lengthdir_y(_spd,dir)

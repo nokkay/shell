@@ -2,15 +2,13 @@
 function player_state_free()
 {
 	
-	
-// spd
+
+	// spd + direction
 	xspd = lengthdir_x(input_magnitude * move_spd, input_direction)
 	yspd = lengthdir_y(input_magnitude * move_spd, input_direction)
-	
-
-// collision + move
-	player_collision()
-
+		
+	// collide 
+	player_collision()	
 
 // update sprite index
 	var _old_spr = sprite_index

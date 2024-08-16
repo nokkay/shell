@@ -13,6 +13,21 @@
 			if (!ds_exists(hit_by_attack, ds_type_list)) hit_by_attack = ds_list_create()
 			ds_list_clear(hit_by_attack)
 		}
+		
+		// spd
+		xspd = lengthdir_x(input_magnitude * move_spd, input_direction)
+		yspd = lengthdir_y(input_magnitude * move_spd, input_direction)
+	
+		// closer we are to the end of the animation the slower we are
+		if (image_index % 4 > 1)
+		{
+			xspd *= 1 / (image_index % 4 + 1)
+			yspd *= 1 / (image_index % 4 + 1)
+		}
+		
+		// move 
+		player_collision()	
+		
  
 		calc_attack(spr_player_attack_slash_hb)
 	

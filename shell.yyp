@@ -204,6 +204,7 @@
     {"id":{"name":"spr_boulder","path":"sprites/spr_boulder/spr_boulder.yy",},},
     {"id":{"name":"spr_bucci_hatted","path":"sprites/spr_bucci_hatted/spr_bucci_hatted.yy",},},
     {"id":{"name":"spr_bucci","path":"sprites/spr_bucci/spr_bucci.yy",},},
+    {"id":{"name":"spr_building_tileset","path":"sprites/spr_building_tileset/spr_building_tileset.yy",},},
     {"id":{"name":"spr_building","path":"sprites/spr_building/spr_building.yy",},},
     {"id":{"name":"spr_coin_old","path":"sprites/spr_coin_old/spr_coin_old.yy",},},
     {"id":{"name":"spr_coin_UI","path":"sprites/spr_coin_UI/spr_coin_UI.yy",},},
